@@ -1,3 +1,35 @@
 
 https://github.com/FPGAwars/icestudio/releases/    versiones Icestudio
 
+https://github.com/Obijuan/digital-electronics-with-open-FPGAs-tutorial/wiki
+
+https://github.com/Obijuan/open-fpga-verilog-tutorial/wiki
+
+https://github.com/Obijuan/Cuadernos-tecnicos-FPGAs-libres/wiki                    Cuadernos técnicos
+
+https://github.com/Obijuan/FPGA-WEB-Serial/wiki
+
+http://www.iearobotics.com/wiki/index.php?title=Tutorial:_Github_y_Freecad            Aprender Github
+
+
+https://github.com/Obijuan/Academia-Jedi-Hw                                      Colección Jedi
+
+https://github.com/PCBPrints/PCbPrints                                           Pcbprints
+
+https://github.com/Obijuan/3D-parts/wiki/Fijador-de-placas                       Imprimir fijaciones
+
+https://github.com/Obijuan/digital-electronics-with-open-FPGAs-tutorial/wiki/V%C3%ADdeo-31:-Despedida-de-la-temporada-I   Enlaces Interesantes
+
+https://github.com/FPGAwars/icestudio-block-icons/wiki     iconos svg
+
+https://github.com/Obijuan/simplez-fpga/wiki                                        Simplez
+
+https://github.com/Obijuan/SAP-1-FPGA/wiki                                          SAP
+
+https://github.com/Obijuan/icecrystal                                             LCDs
+
+https://github.com/Obijuan/FPGA-keyboard/wiki                                       Teclado
+
+https://github.com/Obijuan/PS2-KeyBoard-FPGA/wiki                                   teclado PS2
+
+https://github.com/Obijuan/MonsterLED/wiki                                        
