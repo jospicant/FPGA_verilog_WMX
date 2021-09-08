@@ -1,6 +1,9 @@
 
 https://github.com/FPGAwars/icestudio/releases/    versiones Icestudio
 
+https://github.com/FPGAwars/icm                     crear y chequear colecciones Icestudio
+
+
 https://github.com/Obijuan/digital-electronics-with-open-FPGAs-tutorial/wiki
 
 https://github.com/Obijuan/open-fpga-verilog-tutorial/wiki
@@ -32,4 +35,9 @@ https://github.com/Obijuan/FPGA-keyboard/wiki                                   
 
 https://github.com/Obijuan/PS2-KeyBoard-FPGA/wiki                                   teclado PS2
 
-https://github.com/Obijuan/MonsterLED/wiki                                        
+https://github.com/Obijuan/MonsterLED/wiki                 
+
+https://github.com/FPGAwars/icestudio-collections                                  colecciones
+https://github.com/FPGAwars/collection-generic                       
+
+https://groups.google.com/g/fpga-wars-explorando-el-lado-libre/c/D1TdQdAvjIg/m/0WVGz7dHAgAJ
