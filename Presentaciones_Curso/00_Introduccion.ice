@@ -12,6 +12,45 @@
     "graph": {
       "blocks": [
         {
+          "id": "1f81a869-b227-44da-9fc3-021e5e7f0a5c",
+          "type": "basic.input",
+          "data": {
+            "name": "A",
+            "pins": [
+              {
+                "index": "0",
+                "name": "SW1",
+                "value": "34"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 616,
+            "y": 496
+          }
+        },
+        {
+          "id": "3fad5591-ddd7-4a26-a43b-811e0990be2e",
+          "type": "basic.output",
+          "data": {
+            "name": "o",
+            "pins": [
+              {
+                "index": "0",
+                "name": "LED6",
+                "value": "38"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 952,
+            "y": 496
+          }
+        },
+        {
           "id": "3f930e04-e97e-4fa4-8f88-c6b0ecf1cf9b",
           "type": "basic.info",
           "data": {
@@ -23,12 +62,23 @@
             "y": -176
           },
           "size": {
-            "width": 1328,
-            "height": 688
+            "width": 1256,
+            "height": 592
           }
         }
       ],
-      "wires": []
+      "wires": [
+        {
+          "source": {
+            "block": "1f81a869-b227-44da-9fc3-021e5e7f0a5c",
+            "port": "out"
+          },
+          "target": {
+            "block": "3fad5591-ddd7-4a26-a43b-811e0990be2e",
+            "port": "in"
+          }
+        }
+      ]
     }
   },
   "dependencies": {}
