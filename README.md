@@ -1,6 +1,6 @@
 # FPGA_verilog_WMX
 Punto de encuentro para intentar aprender verilog con  herramientas opensource como Icestudio
 
-##3 Más en la WIKI  
+### Más en la WIKI  
 
 [**Ir a la Wiki**] https://github.com/jospicant/FPGA_verilog_WMX/wiki
