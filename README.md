@@ -8,4 +8,4 @@ Punto de encuentro para intentar aprender verilog con  herramientas opensource c
 
 
 
-[enlace a la Wiki] https://github.com/jospicant/FPGA_verilog_WMX/wiki/00_Home
+[enlace a la Wiki]: https://github.com/jospicant/FPGA_verilog_WMX/wiki/00_Home
