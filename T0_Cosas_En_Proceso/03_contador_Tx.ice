@@ -160,6 +160,22 @@
             "width": 96,
             "height": 96
           }
+        },
+        {
+          "id": "779a9749-ab29-479e-b3e1-467855f9277d",
+          "type": "basic.info",
+          "data": {
+            "info": "Nota: Si se usa el plugin se Serial term, este hace conversión del binario \na ASCII por lo que hay muchos no imprimibles",
+            "readonly": true
+          },
+          "position": {
+            "x": 224,
+            "y": 16
+          },
+          "size": {
+            "width": 600,
+            "height": 80
+          }
         }
       ],
       "wires": [
