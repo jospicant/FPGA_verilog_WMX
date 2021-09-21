@@ -83,7 +83,7 @@
           "id": "de016bcc-cb98-4660-983d-1ee643e020ab",
           "type": "basic.code",
           "data": {
-            "code": "\r\n//module constante(output [7:0] n);\r\n   \r\n    //parameter [7:0] numero = 8'b0101_0101;\r\n\r\n     assign n = numero;\r\n  \r\n// endmodule\r\n",
+            "code": "\r\n//module constante(output [7:0] n);\r\n   \r\n   //localparam [7:0] numero = 8'b0101_0101;\r\n    \r\n\r\n     assign n = numero;\r\n  \r\n// endmodule\r\n",
             "params": [
               {
                 "name": "numero"
@@ -113,8 +113,8 @@
           "id": "afadc0de-7907-485e-a33a-b9a3bdb93462",
           "type": "basic.info",
           "data": {
-            "info": "# Parameter \n* Podemos usar parámeter para crear una variable local(en este caso) / glogal.\n* por defecto, en este ejemplo tiene el valor 55 si no se introduce otro valor.\n* En este ejemplo se ha creado un módulo con una salida con un valor constante de 8 bits",
-            "readonly": true
+            "info": "# Parameter - localparam\n* Podemos usar parámeter para crear una variable local( localparam ) / glogal (parameter).\n* por defecto, en este ejemplo tiene el valor 55 si no se introduce otro valor.\n* En este ejemplo se ha creado un módulo con una salida con un valor constante de 8 bits",
+            "readonly": false
           },
           "position": {
             "x": 40,
