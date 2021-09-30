@@ -1,0 +1,49 @@
+$date
+	Thu Sep 30 21:53:16 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module main_tb $end
+$var wire 1 ! out $end
+$var reg 1 " in $end
+$scope module MAIN $end
+$var wire 1 " va3087a $end
+$var wire 1 ! ve4bcac $end
+$var wire 8 # vinit [0:7] $end
+$var wire 1 $ w0 $end
+$var wire 1 % w1 $end
+$scope module vbe1451 $end
+$var wire 1 $ in $end
+$var wire 1 % out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+0$
+b0 #
+0"
+1!
+$end
+#100000
+0!
+0%
+1$
+1"
+#200000
+1!
+1%
+0$
+0"
+#230000
+0!
+0%
+1$
+1"
+#330000
