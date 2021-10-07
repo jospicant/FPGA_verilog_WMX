@@ -32,15 +32,15 @@
             "virtual": false
           },
           "position": {
-            "x": 1096,
-            "y": 200
+            "x": 1088,
+            "y": 224
           }
         },
         {
           "id": "cca03b18-ee95-4210-9f8c-b347170d137f",
           "type": "basic.code",
           "data": {
-            "code": "// parameter --> definir costantes\n\nparameter cero=2'b00, uno=2'b01, dos=2'b10, \n          tres =2'b11;\n          \nreg [1:0] dato;  //tipo reg \n\nalways @(*)\n  case(in)\n    0:dato=cero;\n    1:dato=uno;\n    2:dato=dos;\n    3:dato=tres;\n  endcase\n\nassign q=dato;  // q tipo wire\n\n\n",
+            "code": "// parameter --> definir costantes\n\nparameter cero=2'b00, uno=2'b01, dos=2'b10, \n          tres =2'b11;\n          \nreg [1:0] dato;  //tipo reg \n\n//********************* MUX  ********\nalways @(*)\n  case(in)\n    0:dato=cero;\n    1:dato=uno;\n    2:dato=dos;\n    3:dato=tres;\n  endcase\n//************ asignación*********\n\nassign q=dato;  // q tipo wire\n\n\n",
             "params": [],
             "ports": {
               "in": [
@@ -64,16 +64,16 @@
             "y": 96
           },
           "size": {
-            "width": 448,
-            "height": 304
+            "width": 456,
+            "height": 344
           }
         },
         {
           "id": "67c57b0a-c34f-44d6-9656-e4c912653904",
           "type": "e79148d23652be6d5149f8f6881f7f47bd958497",
           "position": {
-            "x": 320,
-            "y": 224
+            "x": 344,
+            "y": 248
           },
           "size": {
             "width": 96,
@@ -84,8 +84,8 @@
           "id": "94d81234-c018-41e3-bd55-b216d8208e52",
           "type": "a9a5bcacee090083b4953db896466c988553eca2",
           "position": {
-            "x": 184,
-            "y": 312
+            "x": 192,
+            "y": 296
           },
           "size": {
             "width": 96,
@@ -100,12 +100,28 @@
             "readonly": true
           },
           "position": {
-            "x": 432,
+            "x": 376,
             "y": -56
           },
           "size": {
             "width": 800,
             "height": 136
+          }
+        },
+        {
+          "id": "ef297ade-c67d-486a-a4cf-82aec52db9fb",
+          "type": "basic.info",
+          "data": {
+            "info": "![dibujo](https://github.com/jospicant/FPGA_verilog_WMX/wiki/01_imagenes/Semana5/01.png)",
+            "readonly": true
+          },
+          "position": {
+            "x": 1200,
+            "y": -184
+          },
+          "size": {
+            "width": 664,
+            "height": 168
           }
         }
       ],

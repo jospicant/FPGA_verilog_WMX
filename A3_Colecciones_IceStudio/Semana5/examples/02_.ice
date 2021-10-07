@@ -88,8 +88,8 @@
             "readonly": true
           },
           "position": {
-            "x": 448,
-            "y": -216
+            "x": 72,
+            "y": -224
           },
           "size": {
             "width": 800,
@@ -138,12 +138,12 @@
           "id": "efe7ab95-cb64-47e6-bdab-3374128c8df1",
           "type": "basic.info",
           "data": {
-            "info": "\n![dibujo](02.png)",
-            "readonly": false
+            "info": "\n![dibujo](https://github.com/jospicant/FPGA_verilog_WMX/wiki/01_imagenes/Semana5/02.png)",
+            "readonly": true
           },
           "position": {
-            "x": 1080,
-            "y": -40
+            "x": 1176,
+            "y": -248
           },
           "size": {
             "width": 448,
