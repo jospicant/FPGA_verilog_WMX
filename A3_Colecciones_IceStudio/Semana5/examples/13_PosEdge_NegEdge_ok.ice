@@ -38,7 +38,7 @@
           },
           "position": {
             "x": 1136,
-            "y": 120
+            "y": 104
           }
         },
         {
@@ -58,7 +58,7 @@
           },
           "position": {
             "x": -16,
-            "y": 152
+            "y": 136
           }
         },
         {
@@ -87,8 +87,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1144,
-            "y": 424
+            "x": 1136,
+            "y": 440
           }
         },
         {
@@ -96,12 +96,12 @@
           "type": "basic.constant",
           "data": {
             "name": "Periodo",
-            "value": "10",
+            "value": "2",
             "local": false
           },
           "position": {
             "x": -24,
-            "y": 344
+            "y": 352
           }
         },
         {
@@ -109,7 +109,7 @@
           "type": "5b3e6904f8f6874e0279794889dab02e12abea04",
           "position": {
             "x": -24,
-            "y": 456
+            "y": 472
           },
           "size": {
             "width": 96,
@@ -120,7 +120,7 @@
           "id": "b428c685-7d68-495d-bf05-2a67f5af271d",
           "type": "basic.code",
           "data": {
-            "code": "// module Nobloqueante(input reset, input clk, output [2:0] e, output [2:0] f);\n\n// asignación NO BLOQUEANTE <=  \n// No importa el orden.  Primero se ejecutan las acciones a la derecha de la asignación ( RHS)\n// y al final del always se asignan todos a la izquierda.\n\n// En este caso podemos ver un intercambio en cada ciclo de reloj\n\nreg [2:0] a=7;       // 7\nreg [2:0] b=5;       // 5\n\n\n// originalmente a = 7  b=5\n\nalways @(posedge clk, posedge reset)\nbegin\n\n if(reset)  // Reset Asíncrono... Se produce en cuanto se pulse\n  begin\n    a<=7;           //Carga valores\n    b<=5;\n  end\n  \n else\n  begin             \n    a <= b;        // Intercambia\n    b <= a;             \n  end\n  \nend\n\nassign e = a;      //Asignación\nassign f = b;\n\n//endmodule",
+            "code": "// module Nobloqueante(input reset, input clk, output [2:0] e, output [2:0] f);\n\n// asignación NO BLOQUEANTE <=  \n// No importa el orden.  Primero se ejecutan las acciones a la derecha de la asignación ( RHS)\n// y al final del always se asignan todos a la izquierda.\n\n// En este caso podemos ver un intercambio en cada ciclo de reloj\n\nreg [2:0] a=7;       // 7\nreg [2:0] b=5;       // 5\n\n\n// originalmente a = 7  b=5\n\n//always @(posedge clk, negedge reset) //no hay instancia para esta forma\n                                     //Verifica pero no construye ... no se puede instanciar\n                                     //biestable con reloj flanco positivo y otro negativo\n                                     //Este caso no funciona...\n                                     \nalways @(negedge clk, posedge reset)  // Ojo! Esta si se instancia y funciona correctamente.\n                                       \nbegin                                 \n if(reset)  // Reset Asíncrono... Se produce en cuanto se pulse\n  begin\n    a<=7;           //Carga valores\n    b<=5;\n  end\n  \n else\n  begin             \n    a <= b;        // Intercambia\n    b <= a;             \n  end\n  \nend\n\nassign e = a;      //Asignación\nassign f = b;\n\n//endmodule",
             "params": [],
             "ports": {
               "in": [
@@ -147,11 +147,27 @@
           },
           "position": {
             "x": 168,
-            "y": 32
+            "y": 0
           },
           "size": {
-            "width": 872,
-            "height": 608
+            "width": 880,
+            "height": 672
+          }
+        },
+        {
+          "id": "28dd1fce-f5ea-4370-ae9c-b2d23ccff96e",
+          "type": "basic.info",
+          "data": {
+            "info": "\n* NOTA IMPORTANTE:  En este caso podemos ver un bloque always que responde a un flanco negativo y otro positivo ...\n* lo normal es no mezclar tipos de flanco pq a la hora de sintetizar puede que no pueda instanciar un biestable que responda a ese tipo de respuesta\n* pero podemos ver q si usamos   **negedge-posedge si construye  pero si usamos  posedge-negedge no...** ",
+            "readonly": true
+          },
+          "position": {
+            "x": 152,
+            "y": -112
+          },
+          "size": {
+            "width": 1328,
+            "height": 88
           }
         }
       ],
