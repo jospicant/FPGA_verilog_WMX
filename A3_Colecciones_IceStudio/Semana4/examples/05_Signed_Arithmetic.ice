@@ -139,12 +139,12 @@
           "id": "2d2cb29c-f7f4-4cfd-8396-99cf25886554",
           "type": "basic.info",
           "data": {
-            "info": "# Operación con SIGNO  (integer)\n\n3 -5 = -2  -->  **0011(3)**         0101(5)--> 1010+1 --> **1011 (-5) Ca2**  \n                                0010(2)--> 1101-1 --> 1110 (-2) Ca2  \n                                \n* Si se realiza una declaración de variables locales dentro de un procedimiento always  \n  se debe asignar una etiqueta para que funcione, en este caso le hemos llamado **LABEL**\n* Aunque se hayan definido los  **integers a1,b1,d1** que serían de 32 bits, como las operaciones  \n  son con números de 3 bits + 1 signo, se adaptan a 3+1;\n\n",
+            "info": "# Operación con SIGNO  (sin integer)\n\n3 -5 = -2  -->  **0011(3)**         0101(5)--> 1010+1 --> **1011 (-5) Ca2**  \n                                0010(2)--> 1101-1 --> 1110 (-2) Ca2  \n                                \n* Si se realiza una declaración de variables locales dentro de un procedimiento always  \n  se debe asignar una etiqueta para que funcione, en este caso le hemos llamado **LABEL**\n* Aunque se hayan definido los  **integers a1,b1,d1** que serían de 32 bits, como las operaciones  \n  son con números de 3 bits + 1 signo, se adaptan a 3+1;\n\n",
             "readonly": true
           },
           "position": {
             "x": 64,
-            "y": -216
+            "y": -224
           },
           "size": {
             "width": 896,

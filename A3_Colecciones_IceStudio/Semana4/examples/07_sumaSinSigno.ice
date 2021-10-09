@@ -115,7 +115,7 @@
           "id": "e69005d0-b80c-45e7-8bb2-5aa895bac57f",
           "type": "basic.info",
           "data": {
-            "info": "\n* **las constantes se introducen sin especificar el tipo** por lo q las trata como **integer** ( con signo )\n* las constantes se adaptan a lso 4 bits que tienen aunque integer sea de 32bits\n* Se realiza una suma que se considera sin signo (aunque el -1 le entra en Ca2 y lo suma como le entra)\n* El desarrollador debe saber en todo momento como está tratando los números.\n   \n  **0000  ( cero )**    0001-->1110+1 -->**1111 (-1) **        0000 + 1111 --> 1111 ( resultado de la salida)",
+            "info": "\n* **las constantes se introducen sin especificar el tipo** por lo q las trata como **integer** ( con signo )\n* las constantes se adaptan a lso 4 bits que tienen aunque integer sea de 32bits\n* Se realiza una suma que se considera sin signo (aunque el -1 le entra en Ca2 y lo suma como le entra)\n* El desarrollador debe saber en todo momento como está tratando los números.\n   \n  **0000  ( cero )**    0001-->1110+1 -->**1111 (-1) **        0000 + 1111 --> 1111 ( resultado de la salida)\n* las entradas se especifica que se deben tratar como números con signo **wire signed [3:0] a,b;**  ",
             "readonly": true
           },
           "position": {
@@ -159,8 +159,8 @@
             "readonly": true
           },
           "position": {
-            "x": 792,
-            "y": 144
+            "x": 800,
+            "y": 248
           },
           "size": {
             "width": 336,
