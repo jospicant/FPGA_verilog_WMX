@@ -37,8 +37,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1136,
-            "y": 104
+            "x": 1144,
+            "y": 112
           }
         },
         {
@@ -58,7 +58,7 @@
           },
           "position": {
             "x": -16,
-            "y": 136
+            "y": 144
           }
         },
         {
@@ -87,8 +87,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1136,
-            "y": 440
+            "x": 1128,
+            "y": 472
           }
         },
         {
@@ -109,7 +109,7 @@
           "type": "5b3e6904f8f6874e0279794889dab02e12abea04",
           "position": {
             "x": -24,
-            "y": 472
+            "y": 504
           },
           "size": {
             "width": 96,
@@ -120,7 +120,7 @@
           "id": "b428c685-7d68-495d-bf05-2a67f5af271d",
           "type": "basic.code",
           "data": {
-            "code": "// module Nobloqueante(input reset, input clk, output [2:0] e, output [2:0] f);\n\n// asignación NO BLOQUEANTE <=  \n// No importa el orden.  Primero se ejecutan las acciones a la derecha de la asignación ( RHS)\n// y al final del always se asignan todos a la izquierda.\n\n// En este caso podemos ver un intercambio en cada ciclo de reloj\n\nreg [2:0] a=7;       // 7\nreg [2:0] b=5;       // 5\n\n\n// originalmente a = 7  b=5\n\n//always @(posedge clk, negedge reset) //no hay instancia para esta forma\n                                     //Verifica pero no construye ... no se puede instanciar\n                                     //biestable con reloj flanco positivo y otro negativo\n                                     //Este caso no funciona...\n                                     \nalways @(negedge clk, posedge reset)  // Ojo! Esta si se instancia y funciona correctamente.\n                                       \nbegin                                 \n if(reset)  // Reset Asíncrono... Se produce en cuanto se pulse\n  begin\n    a<=7;           //Carga valores\n    b<=5;\n  end\n  \n else\n  begin             \n    a <= b;        // Intercambia\n    b <= a;             \n  end\n  \nend\n\nassign e = a;      //Asignación\nassign f = b;\n\n//endmodule",
+            "code": "// module Nobloqueante(input reset, input clk, output [2:0] e, output [2:0] f);\n\n// asignación NO BLOQUEANTE <=  \n// No importa el orden.  Primero se ejecutan las acciones a la derecha de la asignación ( RHS)\n// y al final del always se asignan todos a la izquierda.\n\n// En este caso podemos ver un intercambio en cada ciclo de reloj\n\nreg [2:0] a=7;       // 7\nreg [2:0] b=5;       // 5\n\n\n// originalmente a = 7  b=5\n\n//always @(negedge clk, negedge reset) //no se instancia\n//always @(posedge clk, negedge reset) //no hay instancia para esta forma\n                                     //Verifica pero no construye ... no se puede instanciar\n                                     //biestable con reloj flanco positivo y otro negativo\n                                     //Este caso no funciona...\n\n//always @(posedge clk, posedge reset) // si instancia\nalways @(negedge clk, posedge reset)  // Ojo! Esta si se instancia y funciona correctamente.\n                                       \nbegin                                 \n if(reset)  // Reset Asíncrono... Se produce en cuanto se pulse\n  begin\n    a<=7;           //Carga valores\n    b<=5;\n  end\n  \n else\n  begin             \n    a <= b;        // Intercambia\n    b <= a;             \n  end\n  \nend\n\nassign e = a;      //Asignación\nassign f = b;\n\n//endmodule",
             "params": [],
             "ports": {
               "in": [
@@ -150,8 +150,8 @@
             "y": 0
           },
           "size": {
-            "width": 880,
-            "height": 672
+            "width": 872,
+            "height": 712
           }
         },
         {
@@ -162,8 +162,8 @@
             "readonly": true
           },
           "position": {
-            "x": 152,
-            "y": -112
+            "x": 160,
+            "y": -96
           },
           "size": {
             "width": 1328,
