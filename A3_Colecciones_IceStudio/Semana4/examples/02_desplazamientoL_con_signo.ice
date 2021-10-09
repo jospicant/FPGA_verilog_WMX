@@ -115,16 +115,16 @@
           "id": "19aa67d7-61ba-40d6-846c-0572f3f33bcc",
           "type": "basic.info",
           "data": {
-            "info": "# valores definidos con signo\n* Si un dato lo definimos que hay que considerar **el signo**, debemos especificarlo con la palabra clave **signed**\n* Si está definido como **signed** el bit más significativo indica el signo y si es negativo lo expresa en Ca2\n* Exite un desplazamiento a la izquierda posible **para indicar que trate como con signo** para que introduzca 0's por la derecha  \n  pero siga manteniendo el signo, sabe como manejar el bit del signo. Se usa **<<<** en vez de **<<**.\n\n* En este caso desplazo 3 bits a la izquierda y adapta el signo   \n            1010(-6);  bit 3 indica que es un número negativo al tratarlo como **signed**  **1010 (-6)**--> 0101+1 --> 0110 (6)\n      111_1010_0(-12);  un desplazamiento a la izq, como adapta a 8 bits rellena con 1's para mantener el número negativo\n      11_1010_00(-24);\n      1_1010_000(-48);\n \n* con 7 bits + 1 de signo solo podría desplazar 4 veces a la izq  (-96) pq la quinta vez ya perdería el signo ( daría 64 no -192 ya q con 7 bits solo llego hasta 128 )\n  puedes probar cambiando  d<<<4 y d<<<5 ",
+            "info": "# valores definidos con signo\n* Si un dato lo definimos que hay que considerar **el signo**, debemos especificarlo con la palabra clave **signed**\n* Si está definido como **signed** el bit más significativo indica el signo y si es negativo lo expresa en Ca2\n* Exite un desplazamiento a la izquierda posible **para indicar que trate como con signo** para que introduzca 0's por la derecha  \n  pero siga manteniendo el signo, sabe como manejar el bit del signo. Se usa **<<<** en vez de **<<**.\n\n* En este caso desplazo 3 bits a la izquierda y adapta el signo   \n            1010(-6);  bit 3 indica que es un número negativo al tratarlo como **signed**  **1010 (-6)**--> 0101+1 --> 0110 (6)\n      111_1010_0(-12);  un desplazamiento a la izq, como adapta a 8 bits rellena con 1's para mantener el número negativo\n      11_1010_00(-24);\n      1_1010_000(-48);\n \n* con 7 bits + 1 de signo solo podría desplazar 4 veces a la izq  (-96) pq la quinta vez ya perdería el signo ( daría 64 no -192 ya q con 7 bits solo llego hasta 128 )\n  puedes probar cambiando  d<<<1,d<<<2 ... d<<<5",
             "readonly": true
           },
           "position": {
             "x": 176,
-            "y": -280
+            "y": -296
           },
           "size": {
-            "width": 1424,
-            "height": 240
+            "width": 1464,
+            "height": 312
           }
         },
         {

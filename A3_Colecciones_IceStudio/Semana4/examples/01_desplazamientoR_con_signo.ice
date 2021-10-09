@@ -89,7 +89,7 @@
           "id": "98e96e61-9e33-48ad-978b-10d632922ee7",
           "type": "basic.code",
           "data": {
-            "code": "\nwire  [7:0] d = 8'b1010_1010; //-86\n\nassign out = d >>> 1; //-86/2=-43 1101_0101\n\n",
+            "code": "\nwire signed [7:0] d = 8'b1010_1010; //-86\n\nassign out = d >>> 1; //-86/2=-43 1101_0101\n\n",
             "params": [],
             "ports": {
               "in": [],
@@ -120,7 +120,7 @@
           },
           "position": {
             "x": 192,
-            "y": -120
+            "y": -128
           },
           "size": {
             "width": 1056,
