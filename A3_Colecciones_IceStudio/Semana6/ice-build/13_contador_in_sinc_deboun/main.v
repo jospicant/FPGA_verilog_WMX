@@ -4,10 +4,10 @@
 
 //---- Top entity
 module main (
- input vc070b4,
- input vdd4a98,
+ input veddec8,
+ input vcc869c,
  input vclk,
- output [7:0] v465bb3
+ output [7:0] vb8e243
 );
  wire [0:7] w0;
  wire w1;
@@ -15,22 +15,22 @@ module main (
  wire w3;
  wire w4;
  wire w5;
- assign v465bb3 = w0;
- assign w2 = vc070b4;
- assign w3 = vdd4a98;
+ assign vb8e243 = w0;
+ assign w1 = veddec8;
+ assign w2 = vcc869c;
  assign w4 = vclk;
  assign w5 = vclk;
  assign w5 = w4;
- v2107ac vf114b1 (
-  .v64879c(w1),
-  .vd9601b(w2),
-  .vbbbce8(w4)
+ vd014cb v7ba13e (
+  .vb86fe4(w0),
+  .ve61673(w1),
+  .v7c533e(w3),
+  .vdd729a(w4)
  );
- main_va9029d va9029d (
-  .d(w0),
-  .count(w1),
-  .rst(w3),
-  .clk(w5)
+ v2107ac v23d58f (
+  .vd9601b(w2),
+  .v64879c(w3),
+  .vbbbce8(w5)
  );
 endmodule
 
@@ -39,6 +39,76 @@ endmodule
 /*-- - - - - - - - - - - - - - - - - - - - - - - --*/
 /*-- 
 /*-------------------------------------------------*/
+//---- Top entity
+module vd014cb #(
+ parameter v5e4a03 = 256
+) (
+ input vdd729a,
+ input ve61673,
+ input v7c533e,
+ output [7:0] vb86fe4,
+ output v712cd1
+);
+ localparam p1 = v5e4a03;
+ wire w0;
+ wire w2;
+ wire w3;
+ wire w4;
+ wire [0:7] w5;
+ assign w0 = ve61673;
+ assign w2 = v7c533e;
+ assign w3 = vdd729a;
+ assign v712cd1 = w4;
+ assign vb86fe4 = w5;
+ vd014cb_vbd6086 #(
+  .M(p1)
+ ) vbd6086 (
+  .rst(w0),
+  .cnt(w2),
+  .clk(w3),
+  .ov(w4),
+  .q(w5)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Contador-8bits-up-rst  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Contador módulo M, ascendente, de 8 bits, con reset 
+/*-------------------------------------------------*/
+
+module vd014cb_vbd6086 #(
+ parameter M = 0
+) (
+ input clk,
+ input rst,
+ input cnt,
+ output [7:0] q,
+ output ov
+);
+ //-- Numero de bits del contador
+ localparam N = 8; 
+ 
+ //-- En contadores de N bits:
+ //-- M = 2 ** N
+ 
+ //-- Internamente usamos un bit mas
+ //-- (N+1) bits
+ reg [N:0] qi = 0;
+ 
+ always @(posedge clk)
+   if (rst | ov)
+     qi <= 0;
+   else
+     if (cnt)
+       qi <= qi + 1;
+       
+ assign q = qi;
+ 
+ //-- Comprobar overflow
+ assign ov = (qi == M);
+     
+endmodule
 //---- Top entity
 module v2107ac (
  input vbbbce8,
@@ -130,30 +200,5 @@ module v2107ac_v297cb2 (
  //-- El estado del pulsador se saca por state
  assign state = btn_out_r;
  
- 
-endmodule
-
-module main_va9029d (
- input clk,
- input count,
- input rst,
- output [7:0] d
-);
- 
- 
- reg [7:0] d=0;
- 
- always@(posedge clk or posedge rst)
- begin
-  if(rst) //if(!rst) no tendría sentido
-  // incongruencia con posedge rst_n 
-  // y no sintetizaría
-    d<=0;
-  else  
-   if(count) 
-       d<=d+1;
- end
- 
- // DFFR -- Flip flop D con Reset asíncrono
  
 endmodule
