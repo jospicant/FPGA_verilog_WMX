@@ -175,12 +175,12 @@
           "id": "d69b9395-dc69-4022-b241-712326cd264a",
           "type": "basic.info",
           "data": {
-            "info": "\n# Filtro PASO BAJO   y[n] = x[n] + x[n-1] ;",
-            "readonly": true
+            "info": "\n# Filtro PASO BAJO   y[n] = x[n] + x[n-1] ;\n![FPB](./filtroDigital.png)  \n\n",
+            "readonly": false
           },
           "position": {
-            "x": 488,
-            "y": 128
+            "x": 376,
+            "y": 32
           },
           "size": {
             "width": 704,
