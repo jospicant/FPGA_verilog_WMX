@@ -112,7 +112,7 @@
           "id": "69fc15b2-abea-4d47-b92c-c505242237ea",
           "type": "basic.code",
           "data": {
-            "code": "\nreg Q=0;\n\n//Biestable D donde capturo estado actual (in) y anterior (Q)\nalways @(posedge clk)\n Q<=in;\n\n//Con datos del estado actual ya anterior, realizando un circutio combinacional\n//puedo saber si la señal a cambiado y si ha subido o ha bajado el flanco.\n\nassign Toggle= (Q ^ in); //Si son distintos es que hay un cambio\nassign Falling = (~in & Q); // Si in (Actual) es 0 pero antes (Q) era 1 -->Falling\nassign Rising  = (in & ~Q); // Si in (Actual) es 1 pero antes (Q) era 0 --> Rising",
+            "code": "\nreg Q=0;\n\n//Biestable D donde capturo estado actual (in) y anterior (Q)\nalways @(posedge clk)\n Q<=in;\n\n//Con datos del estado actual ya anterior, realizando un circutio combinacional\n//puedo saber si la señal ha cambiado y si ha subido o ha bajado el flanco.\n\nassign Toggle= (Q ^ in); //Si son distintos es que hay un cambio\nassign Falling = (~in & Q); // Si in (Actual) es 0 pero antes (Q) era 1 -->Falling\nassign Rising  = (in & ~Q); // Si in (Actual) es 1 pero antes (Q) era 0 --> Rising",
             "params": [],
             "ports": {
               "in": [

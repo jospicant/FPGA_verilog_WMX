@@ -175,16 +175,16 @@
           "id": "d69b9395-dc69-4022-b241-712326cd264a",
           "type": "basic.info",
           "data": {
-            "info": "\n# Filtro PASO BAJO   y[n] = x[n] + x[n-1] ;\n![FPB](./filtroDigital.png)  \n\n",
-            "readonly": false
+            "info": "\n# Filtro PASO BAJO   y[n] = x[n] + x[n-1] ;\n![FPB](https://github.com/jospicant/FPGA_verilog_WMX/wiki/01_imagenes/Semana6/filtroDigital.png)\n\n",
+            "readonly": true
           },
           "position": {
-            "x": 376,
-            "y": 32
+            "x": 288,
+            "y": -104
           },
           "size": {
-            "width": 704,
-            "height": 104
+            "width": 1008,
+            "height": 96
           }
         }
       ],

@@ -15,16 +15,16 @@
           "id": "459335fd-72b7-4e44-a049-42fc3b124536",
           "type": "basic.info",
           "data": {
-            "info": "# Entradas y Pulsadores\n\n[Entradas y Pulsadores Obijuan](https://github.com/Obijuan/Cuadernos-tecnicos-FPGAs-libres/wiki/CT.10:-Entradas-y-pulsadores#ejemplo-3-error-no-wire-found-for-port-package_pin)  \n[Video Sincronización](https://www.youtube.com/watch?v=lTEmB7vP8WI&list=PLmnz0JqIMEzVo7w2pv6Q04QgRaBTkqR30&index=48)  \n\n",
+            "info": "# Entradas y Pulsadores\n\n[Entradas y Pulsadores Obijuan](https://github.com/Obijuan/Cuadernos-tecnicos-FPGAs-libres/wiki/CT.10:-Entradas-y-pulsadores#ejemplo-3-error-no-wire-found-for-port-package_pin)    \n\n[Video Sincronización](https://www.youtube.com/watch?v=lTEmB7vP8WI&list=PLmnz0JqIMEzVo7w2pv6Q04QgRaBTkqR30&index=48)  ",
             "readonly": true
           },
           "position": {
-            "x": 384,
-            "y": 120
+            "x": 16,
+            "y": 40
           },
           "size": {
-            "width": 488,
-            "height": 192
+            "width": 1384,
+            "height": 144
           }
         },
         {
