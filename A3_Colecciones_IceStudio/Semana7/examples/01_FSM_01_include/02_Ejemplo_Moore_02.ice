@@ -8,19 +8,19 @@
     "image": ""
   },
   "design": {
-    "board": "icestick",
+    "board": "alhambra-ii",
     "graph": {
       "blocks": [
         {
           "id": "6f294fbe-8437-45ca-913d-f8484d10a36b",
           "type": "basic.input",
           "data": {
-            "name": "inA",
+            "name": "A",
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD1",
-                "value": "78"
+                "name": "D0",
+                "value": "2"
               }
             ],
             "virtual": false,
@@ -39,8 +39,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D1",
-                "value": "99"
+                "name": "LED0",
+                "value": "45"
               }
             ],
             "virtual": false
@@ -58,8 +58,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D2",
-                "value": "98"
+                "name": "LED1",
+                "value": "44"
               }
             ],
             "virtual": false
@@ -73,12 +73,12 @@
           "id": "4f5c4f1d-a43f-4493-828a-f23e18ff73bc",
           "type": "basic.input",
           "data": {
-            "name": "inB",
+            "name": "B",
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD3",
-                "value": "80"
+                "name": "D1",
+                "value": "1"
               }
             ],
             "virtual": false,
@@ -138,35 +138,11 @@
           }
         },
         {
-          "id": "ca302467-44bb-4d4e-a1a2-9258a6152767",
-          "type": "8e2728307baccbf26c01cdb87bcfba8ca64a435c",
-          "position": {
-            "x": 96,
-            "y": 160
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "72acc669-f365-4cc9-b5c4-247fb8076cc7",
-          "type": "cfd9babc26edba88e2152493023c4bef7c47f247",
-          "position": {
-            "x": -56,
-            "y": 176
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
           "id": "452089d8-78ed-457d-8f04-964446650c52",
           "type": "3bfe20ce12a1017a3d0c324d97fac7a471e413ad",
           "position": {
             "x": -208,
-            "y": 192
+            "y": 176
           },
           "size": {
             "width": 96,
@@ -199,6 +175,50 @@
           "size": {
             "width": 264,
             "height": 72
+          }
+        },
+        {
+          "id": "ba8a22a0-61e2-4a60-a1ae-ae985aeb6370",
+          "type": "8e2728307baccbf26c01cdb87bcfba8ca64a435c",
+          "position": {
+            "x": 96,
+            "y": 160
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "27d1d3d9-0525-4e8e-8061-606a05898534",
+          "type": "basic.info",
+          "data": {
+            "info": "# ÓPTICO\n",
+            "readonly": true
+          },
+          "position": {
+            "x": -528,
+            "y": 216
+          },
+          "size": {
+            "width": 176,
+            "height": 48
+          }
+        },
+        {
+          "id": "b7481bec-b463-4984-94bc-77607c182836",
+          "type": "basic.info",
+          "data": {
+            "info": "# Mecánico\n",
+            "readonly": true
+          },
+          "position": {
+            "x": -544,
+            "y": 112
+          },
+          "size": {
+            "width": 152,
+            "height": 56
           }
         }
       ],
@@ -235,26 +255,6 @@
         },
         {
           "source": {
-            "block": "72acc669-f365-4cc9-b5c4-247fb8076cc7",
-            "port": "22ff3fa1-943b-4d1a-bd89-36e1c054d077"
-          },
-          "target": {
-            "block": "ca302467-44bb-4d4e-a1a2-9258a6152767",
-            "port": "b6426b43-dcda-418d-b6d3-4764b5bc0b25"
-          }
-        },
-        {
-          "source": {
-            "block": "452089d8-78ed-457d-8f04-964446650c52",
-            "port": "7bfc506f-7a54-40a1-8d33-e78a5409b972"
-          },
-          "target": {
-            "block": "72acc669-f365-4cc9-b5c4-247fb8076cc7",
-            "port": "c9e1af2a-6f09-4cf6-a5b3-fdf7ec2c6530"
-          }
-        },
-        {
-          "source": {
             "block": "4f5c4f1d-a43f-4493-828a-f23e18ff73bc",
             "port": "out"
           },
@@ -278,16 +278,6 @@
               "y": 136
             }
           ]
-        },
-        {
-          "source": {
-            "block": "ca302467-44bb-4d4e-a1a2-9258a6152767",
-            "port": "1d2e403f-0fa6-41fd-83a9-4f309eadd855"
-          },
-          "target": {
-            "block": "0e448662-b898-4969-818e-c9d25536667c",
-            "port": "59b9f823-22f8-4586-9d09-fd083d853bff"
-          }
         },
         {
           "source": {
@@ -323,6 +313,26 @@
           "target": {
             "block": "9671ee02-ad5d-4713-839c-a4107b7ec605",
             "port": "in"
+          }
+        },
+        {
+          "source": {
+            "block": "ba8a22a0-61e2-4a60-a1ae-ae985aeb6370",
+            "port": "1d2e403f-0fa6-41fd-83a9-4f309eadd855"
+          },
+          "target": {
+            "block": "0e448662-b898-4969-818e-c9d25536667c",
+            "port": "59b9f823-22f8-4586-9d09-fd083d853bff"
+          }
+        },
+        {
+          "source": {
+            "block": "452089d8-78ed-457d-8f04-964446650c52",
+            "port": "7bfc506f-7a54-40a1-8d33-e78a5409b972"
+          },
+          "target": {
+            "block": "ba8a22a0-61e2-4a60-a1ae-ae985aeb6370",
+            "port": "b6426b43-dcda-418d-b6d3-4764b5bc0b25"
           }
         }
       ]
