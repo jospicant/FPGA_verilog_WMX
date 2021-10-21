@@ -8,7 +8,7 @@
     "image": ""
   },
   "design": {
-    "board": "icestick",
+    "board": "alhambra-ii",
     "graph": {
       "blocks": [
         {
@@ -19,8 +19,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD1",
-                "value": "78"
+                "name": "SW1",
+                "value": "34"
               }
             ],
             "virtual": false,
@@ -39,8 +39,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD7",
-                "value": "87"
+                "name": "SW2",
+                "value": "33"
               }
             ],
             "virtual": false,
@@ -59,8 +59,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D1",
-                "value": "99"
+                "name": "LED0",
+                "value": "45"
               }
             ],
             "virtual": false
@@ -78,8 +78,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D2",
-                "value": "98"
+                "name": "LED1",
+                "value": "44"
               }
             ],
             "virtual": false

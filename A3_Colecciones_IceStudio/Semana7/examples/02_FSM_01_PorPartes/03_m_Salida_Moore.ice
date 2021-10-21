@@ -8,7 +8,7 @@
     "image": ""
   },
   "design": {
-    "board": "icestick",
+    "board": "alhambra-ii",
     "graph": {
       "blocks": [
         {
@@ -20,7 +20,7 @@
               {
                 "index": "0",
                 "name": "",
-                "value": ""
+                "value": "0"
               }
             ],
             "virtual": true
@@ -40,12 +40,12 @@
               {
                 "index": "1",
                 "name": "",
-                "value": ""
+                "value": "0"
               },
               {
                 "index": "0",
                 "name": "",
-                "value": ""
+                "value": "0"
               }
             ],
             "virtual": true,
@@ -65,7 +65,7 @@
               {
                 "index": "0",
                 "name": "",
-                "value": ""
+                "value": "0"
               }
             ],
             "virtual": true

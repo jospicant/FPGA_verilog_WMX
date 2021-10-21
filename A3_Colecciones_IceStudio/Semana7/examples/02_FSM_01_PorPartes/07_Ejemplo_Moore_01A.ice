@@ -8,19 +8,19 @@
     "image": ""
   },
   "design": {
-    "board": "icestick",
+    "board": "alhambra-ii",
     "graph": {
       "blocks": [
         {
           "id": "6f294fbe-8437-45ca-913d-f8484d10a36b",
           "type": "basic.input",
           "data": {
-            "name": "inA",
+            "name": "A",
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD1",
-                "value": "78"
+                "name": "SW1",
+                "value": "34"
               }
             ],
             "virtual": false,
@@ -35,12 +35,12 @@
           "id": "4f5c4f1d-a43f-4493-828a-f23e18ff73bc",
           "type": "basic.input",
           "data": {
-            "name": "inB",
+            "name": "B",
             "pins": [
               {
                 "index": "0",
-                "name": "PMOD7",
-                "value": "87"
+                "name": "SW2",
+                "value": "33"
               }
             ],
             "virtual": false,
@@ -59,8 +59,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D2",
-                "value": "98"
+                "name": "LED0",
+                "value": "45"
               }
             ],
             "virtual": false
@@ -78,8 +78,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D1",
-                "value": "99"
+                "name": "LED1",
+                "value": "44"
               }
             ],
             "virtual": false
