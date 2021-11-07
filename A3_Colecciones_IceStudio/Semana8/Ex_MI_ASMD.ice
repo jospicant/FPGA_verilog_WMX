@@ -147,7 +147,7 @@
             "y": 176
           },
           "size": {
-            "width": 200,
+            "width": 232,
             "height": 64
           }
         },
@@ -173,7 +173,7 @@
             "y": 320
           },
           "size": {
-            "width": 200,
+            "width": 232,
             "height": 64
           }
         },
@@ -199,7 +199,7 @@
             "y": 104
           },
           "size": {
-            "width": 200,
+            "width": 232,
             "height": 64
           }
         },
@@ -225,7 +225,7 @@
             "y": 248
           },
           "size": {
-            "width": 200,
+            "width": 232,
             "height": 64
           }
         },
@@ -360,6 +360,230 @@
           "size": {
             "width": 1120,
             "height": 176
+          }
+        },
+        {
+          "id": "a50e6cc4-b267-40c8-9fa3-75e1c61030fb",
+          "type": "basic.info",
+          "data": {
+            "info": "## Temporizador T1",
+            "readonly": true
+          },
+          "position": {
+            "x": -264,
+            "y": 64
+          },
+          "size": {
+            "width": 184,
+            "height": 40
+          }
+        },
+        {
+          "id": "3667ea08-71da-4146-aa3c-444abbe5a048",
+          "type": "basic.info",
+          "data": {
+            "info": "## Detector de flanco positivo",
+            "readonly": true
+          },
+          "position": {
+            "x": 120,
+            "y": 312
+          },
+          "size": {
+            "width": 304,
+            "height": 56
+          }
+        },
+        {
+          "id": "5e290fb9-a44a-43f8-9fc2-bf7e674037d1",
+          "type": "basic.info",
+          "data": {
+            "info": "## Contador",
+            "readonly": true
+          },
+          "position": {
+            "x": 464,
+            "y": 512
+          },
+          "size": {
+            "width": 184,
+            "height": 48
+          }
+        },
+        {
+          "id": "a66d2bc6-1ea8-45b1-ac6a-efb024b873b2",
+          "type": "basic.info",
+          "data": {
+            "info": "## Multiplexor",
+            "readonly": true
+          },
+          "position": {
+            "x": 1096,
+            "y": 472
+          },
+          "size": {
+            "width": 176,
+            "height": 48
+          }
+        },
+        {
+          "id": "c7bdece3-0a4f-4d6b-a3c7-202fa83d4946",
+          "type": "basic.info",
+          "data": {
+            "info": "## Controlador",
+            "readonly": true
+          },
+          "position": {
+            "x": 40,
+            "y": 816
+          },
+          "size": {
+            "width": 176,
+            "height": 48
+          }
+        },
+        {
+          "id": "6ca5dff1-d5c7-4147-9ccb-b47aa56547f9",
+          "type": "basic.info",
+          "data": {
+            "info": "## Registro ",
+            "readonly": true
+          },
+          "position": {
+            "x": 1296,
+            "y": 424
+          },
+          "size": {
+            "width": 280,
+            "height": 40
+          }
+        },
+        {
+          "id": "2a7fdbb9-3e36-402f-a007-48565c164cc3",
+          "type": "basic.info",
+          "data": {
+            "info": "## Transmisor",
+            "readonly": true
+          },
+          "position": {
+            "x": 1496,
+            "y": 424
+          },
+          "size": {
+            "width": 160,
+            "height": 32
+          }
+        },
+        {
+          "id": "31a35f54-9a1d-4177-89ba-8527d517cca1",
+          "type": "basic.info",
+          "data": {
+            "info": "## Carga de dato",
+            "readonly": true
+          },
+          "position": {
+            "x": 1296,
+            "y": 448
+          },
+          "size": {
+            "width": 160,
+            "height": 48
+          }
+        },
+        {
+          "id": "6e41791f-583a-471f-9f98-3b9ab97f2041",
+          "type": "basic.info",
+          "data": {
+            "info": "## Serie",
+            "readonly": true
+          },
+          "position": {
+            "x": 1504,
+            "y": 448
+          },
+          "size": {
+            "width": 128,
+            "height": 32
+          }
+        },
+        {
+          "id": "79e94955-d8ac-4376-80e4-217b760acff9",
+          "type": "basic.info",
+          "data": {
+            "info": "## Datos a transmitir",
+            "readonly": true
+          },
+          "position": {
+            "x": 672,
+            "y": 56
+          },
+          "size": {
+            "width": 216,
+            "height": 40
+          }
+        },
+        {
+          "id": "83e6808b-897e-48c0-9d5d-37046f5fb886",
+          "type": "basic.info",
+          "data": {
+            "info": "## Sincronizador y Antirrebote",
+            "readonly": true
+          },
+          "position": {
+            "x": -304,
+            "y": 624
+          },
+          "size": {
+            "width": 280,
+            "height": 40
+          }
+        },
+        {
+          "id": "78c04498-9402-4c23-bd77-1cf0be3f4f11",
+          "type": "basic.info",
+          "data": {
+            "info": "## Reset",
+            "readonly": true
+          },
+          "position": {
+            "x": -352,
+            "y": 808
+          },
+          "size": {
+            "width": 120,
+            "height": 48
+          }
+        },
+        {
+          "id": "78c19ebb-6cb7-440e-b7e2-2354c0a8aefa",
+          "type": "basic.info",
+          "data": {
+            "info": "## Visualizar contador",
+            "readonly": true
+          },
+          "position": {
+            "x": 616,
+            "y": 712
+          },
+          "size": {
+            "width": 248,
+            "height": 48
+          }
+        },
+        {
+          "id": "61eaf9c6-069c-4ef0-abc9-81740550a365",
+          "type": "basic.info",
+          "data": {
+            "info": "# Señales de Entrada Asíncronas",
+            "readonly": true
+          },
+          "position": {
+            "x": -528,
+            "y": 576
+          },
+          "size": {
+            "width": 448,
+            "height": 48
           }
         }
       ],
